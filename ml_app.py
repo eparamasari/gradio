@@ -2,7 +2,8 @@ import re
 import gradio as gr
 
 def data_processing(text):
-    # function for cleaning text
+    """ function for cleaning text
+    input takes text to be cleaned """
     return re.sub(r'[^a-zA-Z0-9]', ' ', text)
 
 gradio_ui = gr.Interface(
